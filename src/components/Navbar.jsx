@@ -14,11 +14,11 @@ const Navbar = () => {
       </div>
       {/* Menu */}
       <ul className="hidden md:flex">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li className="hover:text-pink-600 transition-all">Home</li>
+        <li className="hover:text-pink-600 transition-all">About</li>
+        <li className="hover:text-pink-600 transition-all">Skills</li>
+        <li className="hover:text-pink-600 transition-all">Work</li>
+        <li className="hover:text-pink-600 transition-all">Contact</li>
       </ul>
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
@@ -32,11 +32,21 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl hover:text-pink-600">Home</li>
-        <li className="py-6 text-4xl hover:text-pink-600">About</li>
-        <li className="py-6 text-4xl hover:text-pink-600">Skills</li>
-        <li className="py-6 text-4xl hover:text-pink-600">Work</li>
-        <li className="py-6 text-4xl hover:text-pink-600">Contact</li>
+        <li className="py-6 text-4xl hover:text-pink-600 transition-all">
+          Home
+        </li>
+        <li className="py-6 text-4xl hover:text-pink-600 transition-all">
+          About
+        </li>
+        <li className="py-6 text-4xl hover:text-pink-600 transition-all">
+          Skills
+        </li>
+        <li className="py-6 text-4xl hover:text-pink-600 transition-all">
+          Work
+        </li>
+        <li className="py-6 text-4xl hover:text-pink-600 transition-all">
+          Contact
+        </li>
       </ul>
 
       {/* Social icons */}
