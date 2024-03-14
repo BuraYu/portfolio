@@ -19,14 +19,14 @@ export const data = [
   {
     id: 3,
     name: "React JS Application",
-    image: TestIm,
+    image: WorkIm,
     github: "",
     live: "",
   },
   {
     id: 4,
     name: "React JS Application",
-    image: TestIm,
+    image: RealEst,
     github: "",
     live: "",
   },
