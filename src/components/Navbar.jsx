@@ -3,6 +3,7 @@ import Logo from "../assets/logo.png";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,11 +15,31 @@ const Navbar = () => {
       </div>
       {/* Menu */}
       <ul className="hidden md:flex">
-        <li className="hover:text-pink-600 transition-all">Home</li>
-        <li className="hover:text-pink-600 transition-all">About</li>
-        <li className="hover:text-pink-600 transition-all">Skills</li>
-        <li className="hover:text-pink-600 transition-all">Work</li>
-        <li className="hover:text-pink-600 transition-all">Contact</li>
+        <li className="hover:text-pink-600 transition-all">
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className="hover:text-pink-600 transition-all">
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className="hover:text-pink-600 transition-all">
+          <Link to="skills" smooth={true} duration={500}>
+            Tech Stack
+          </Link>
+        </li>
+        <li className="hover:text-pink-600 transition-all">
+          <Link to="work" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
+        <li className="hover:text-pink-600 transition-all">
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
       {/* Hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
