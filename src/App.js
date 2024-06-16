@@ -1,6 +1,6 @@
 import "./App.css";
 import AboutMe from "./components/aboutMe/AboutMe";
-import Contact from "./components/contact/Contact";
+import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Header from "./components/header/Header.jsx";
 import Hero from "./components/hero/Hero.jsx";
