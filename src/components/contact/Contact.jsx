@@ -25,7 +25,8 @@ const Contact = () => {
         }
       );
   };
-
+  //add image next the form?
+  //add notification that the email is sent -> send change the button :D
   return (
     <form ref={form} onSubmit={sendEmail}>
       <label>Name</label>

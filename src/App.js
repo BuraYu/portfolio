@@ -1,3 +1,4 @@
+import "./reset.css";
 import "./App.css";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Contact from "./components/contact/Contact.jsx";
