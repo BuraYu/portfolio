@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import "./contact.css";
 
 const Contact = () => {
   const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID;
