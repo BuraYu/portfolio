@@ -2,8 +2,9 @@
 
 .headerHero__container {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-
 header {
   background-color: #a8abbe;
   display: flex;
@@ -66,5 +67,4 @@ button:hover {
   justify-content: space-around;
   align-items: center;
   height: 100%;
-  
 }

@@ -5,6 +5,7 @@ import lol from "../../images/lol.jpg";
 
 const HeaderHero = () => {
   //scrolling nav bar sticky? Change it? go up button?
+  //add hamburger menu
   return (
     <div className="headerHero__container">
       <header>
