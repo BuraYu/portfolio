@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 header {
-  background-color: #a8abbe;
+  background-color: #ececec;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -16,11 +16,12 @@ header {
 
 li,
 a,
-button {
+button,
+h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #ecf0f1;
+  color: #385170;
   text-decoration: none;
 }
 
@@ -45,12 +46,12 @@ button {
 }
 
 .nav__links li a:hover {
-  color: #0088a9;
+  color: #ff7070;
 }
 
 button {
   padding: 9px 25px;
-  background-color: rgba(0, 136, 169, 1);
+  background-color: rgba(159, 211, 199, 1);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -58,13 +59,19 @@ button {
 }
 
 button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
+  background-color: rgba(159, 211, 199, 0.8);
 }
 
 .heroSection {
-  background-color: #0088a9;
+  background-color: #142d4c;
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+
+.heroSection h1 {
+  color: #ececec;
+  font-weight: 700;
+  font-size: 40px;
 }
