@@ -1,3 +1,8 @@
-.projects {
-  color: rgb(0, 245, 245);
+.projects__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
 }
