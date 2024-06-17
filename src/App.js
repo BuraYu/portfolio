@@ -3,15 +3,13 @@ import "./App.css";
 import AboutMe from "./components/aboutMe/AboutMe";
 import Contact from "./components/contact/Contact.jsx";
 import Footer from "./components/footer/Footer.jsx";
-import Header from "./components/header/Header.jsx";
-import Hero from "./components/hero/Hero.jsx";
+import HeaderHero from "./components/header/HeaderHero.jsx";
 import Projects from "./components/projects/Projects.jsx";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Hero />
+      <HeaderHero />
       <AboutMe />
       <Projects />
       <Contact />

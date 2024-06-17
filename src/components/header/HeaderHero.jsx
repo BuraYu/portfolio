@@ -1,8 +1,8 @@
 import React from "react";
-import "./header.css";
+import "./headerHero.css";
 import logo from "../../images/logo_placeholder.png";
 
-const Header = () => {
+const HeaderHero = () => {
   return (
     <header>
       <img className="header__logo" src={logo} alt="logo of Burak"></img>
@@ -14,22 +14,17 @@ const Header = () => {
           <li>
             <a href="#">About me</a>
           </li>
+
           <li>
-            <a href="#">Hero</a>
-          </li>
-          <li>
-            <a href="#">projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-            <a href="#">Socials</a>
+            <a href="#">Projects</a>
           </li>
         </ul>
       </nav>
+      <a className="cta" href="#">
+        <button>Contact</button>
+      </a>
     </header>
   );
 };
 
-export default Header;
+export default HeaderHero;
