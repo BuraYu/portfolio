@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+.headerHero__container {
+  height: 100vh;
+}
+
 header {
   background-color: #a8abbe;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding: 10px 10%;
+  overflow: hidden;
 }
 
 li,
@@ -53,4 +58,13 @@ button {
 
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
+}
+
+.heroSection {
+  background-color: #0088a9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  
 }
