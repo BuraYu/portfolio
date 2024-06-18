@@ -1,6 +1,8 @@
 import React from "react";
 import "./projects.css";
 
+//click open preview gif, link to github etc...
+
 const Projects = () => {
   return (
     <div className="projects">
@@ -17,10 +19,10 @@ const Projects = () => {
             automated task prioritization, and real-time support.
           </p>
           <ul className="project__technologies">
-            <li className="project__technology html">HTML</li>
-            <li className="project__technology css">CSS</li>
-            <li className="project__technology javascript">JavaScript</li>
-            <li className="project__technology react">React</li>
+            <li className="project__technology">HTML</li>
+            <li className="project__technology">CSS</li>
+            <li className="project__technology">JavaScript</li>
+            <li className="project__technology">React</li>
           </ul>
         </div>
         <div className="project">
@@ -35,10 +37,10 @@ const Projects = () => {
             automated task prioritization, and real-time support.
           </p>
           <ul className="project__technologies">
-            <li className="project__technology html">HTML</li>
-            <li className="project__technology css">CSS</li>
-            <li className="project__technology javascript">JavaScript</li>
-            <li className="project__technology react">React</li>
+            <li className="project__technology">HTML</li>
+            <li className="project__technology">CSS</li>
+            <li className="project__technology">JavaScript</li>
+            <li className="project__technology">React</li>
           </ul>
         </div>
       </div>
@@ -55,10 +57,10 @@ const Projects = () => {
             automated task prioritization, and real-time support.
           </p>
           <ul className="project__technologies">
-            <li className="project__technology html">HTML</li>
-            <li className="project__technology css">CSS</li>
-            <li className="project__technology javascript">JavaScript</li>
-            <li className="project__technology react">React</li>
+            <li className="project__technology">HTML</li>
+            <li className="project__technology">CSS</li>
+            <li className="project__technology">JavaScript</li>
+            <li className="project__technology">React</li>
           </ul>
         </div>
         <div className="project">
@@ -73,10 +75,10 @@ const Projects = () => {
             automated task prioritization, and real-time support.
           </p>
           <ul className="project__technologies">
-            <li className="project__technology html">HTML</li>
-            <li className="project__technology css">CSS</li>
-            <li className="project__technology javascript">JavaScript</li>
-            <li className="project__technology react">React</li>
+            <li className="project__technology">HTML</li>
+            <li className="project__technology">CSS</li>
+            <li className="project__technology">JavaScript</li>
+            <li className="project__technology">React</li>
           </ul>
         </div>
       </div>

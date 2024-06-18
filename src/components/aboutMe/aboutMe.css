@@ -3,6 +3,7 @@
   background-color: #ececec;
   display: flex;
   justify-content: space-around;
+  height: 100vh;
 }
 
 .aboutme__description {
