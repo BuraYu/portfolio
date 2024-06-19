@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./projects.css";
+import Modal from "../modal/Modal";
 
 //click open preview gif, link to github etc...
 
 const Projects = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const handleClick = (project) => {
+    setSelectedProject(project);
+    setIsOpen(true);
+  };
+
+  const handleClose = () => {
+    setSelectedProject(null);
+    setIsOpen(false);
+  };
+
   return (
     <div className="projects">
       <div className="projects__section">
-        <div className="project">
+        <div
+          className="project"
+          onClick={() =>
+            handleClick({ title: "Task Tracker", description: "..." })
+          }
+        >
           <h3 className="project__title">Task Tracker</h3>
           <p className="project__description">
             Stay organized and boost your productivity with our Task Tracker
@@ -25,7 +44,12 @@ const Projects = () => {
             <li className="project__technology">React</li>
           </ul>
         </div>
-        <div className="project">
+        <div
+          className="project"
+          onClick={() =>
+            handleClick({ title: "Task Tracker", description: "..." })
+          }
+        >
           <h3 className="project__title">Task Tracker</h3>
           <p className="project__description">
             Stay organized and boost your productivity with our Task Tracker
@@ -45,7 +69,12 @@ const Projects = () => {
         </div>
       </div>
       <div className="projects__section">
-        <div className="project">
+        <div
+          className="project"
+          onClick={() =>
+            handleClick({ title: "Task Tracker", description: "..." })
+          }
+        >
           <h3 className="project__title">Task Tracker</h3>
           <p className="project__description">
             Stay organized and boost your productivity with our Task Tracker
@@ -63,7 +92,12 @@ const Projects = () => {
             <li className="project__technology">React</li>
           </ul>
         </div>
-        <div className="project">
+        <div
+          className="project"
+          onClick={() =>
+            handleClick({ title: "Task Tracker", description: "..." })
+          }
+        >
           <h3 className="project__title">Task Tracker</h3>
           <p className="project__description">
             Stay organized and boost your productivity with our Task Tracker
@@ -82,6 +116,10 @@ const Projects = () => {
           </ul>
         </div>
       </div>
+      <Modal isOpen={isOpen} onClose={handleClose}>
+        <h2>{selectedProject?.title}</h2>
+        <p>{selectedProject?.description}</p>
+      </Modal>
     </div>
   );
 };
