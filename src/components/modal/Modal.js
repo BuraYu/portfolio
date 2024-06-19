@@ -9,7 +9,7 @@ const Modal = ({ isOpen, onClose, children }) => {
     <div className="modal">
       <div className="modal__content">
         <img src={smoker} className="smoker" />
-        {/* {children} */}
+        {children}
         <div className="modal__description">
           <h3 className="project__title">Task Tracker</h3>
           <p className="project__description">
