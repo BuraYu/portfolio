@@ -9,18 +9,12 @@ const Modal = ({ isOpen, onClose, children }) => {
     <div className="modal">
       <div className="modal__content">
         <img src={smoker} className="smoker" />
-        {children}
+        {/* {children}
+        {console.log(children[0].props.children)} */}
+
         <div className="modal__description">
-          <h3 className="project__title">Task Tracker</h3>
-          <p className="project__description">
-            Stay organized and boost your productivity with our Task Tracker
-            app, now enhanced with ChatGPT integration. This innovative app not
-            only helps you manage your tasks efficiently but also provides
-            intelligent assistance to keep you on track. Whether you're planning
-            your day, setting reminders, or collaborating with teammates, our
-            ChatGPT-powered Task Tracker offers personalized suggestions,
-            automated task prioritization, and real-time support.
-          </p>
+          <h3 className="project__title">{children[0].props.children}</h3>
+          <p className="project__description">{children[1].props.children}</p>
           <ul className="project__technologies">
             <li className="project__technology">HTML</li>
             <li className="project__technology">CSS</li>

@@ -47,12 +47,7 @@ const Projects = () => {
   return (
     <div className="projects">
       <div className="projects__section">
-        <div
-          className="project"
-          onClick={() =>
-            handleClick({ title: "Task Tracker", description: "..." })
-          }
-        >
+        <div className="project" onClick={() => handleClick(project1)}>
           <h3 className="project__title">{project1.title}</h3>
           <p className="project__description">{project1.description}</p>
           <ul className="project__technologies">
@@ -62,12 +57,7 @@ const Projects = () => {
             <li className="project__technology">React</li>
           </ul>
         </div>
-        <div
-          className="project"
-          onClick={() =>
-            handleClick({ title: "Task Tracker 2", description: "..." })
-          }
-        >
+        <div className="project" onClick={() => handleClick(project2)}>
           <h3 className="project__title">{project2.title}</h3>
           <p className="project__description">{project2.description}</p>
           <ul className="project__technologies">
@@ -79,12 +69,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="projects__section">
-        <div
-          className="project"
-          onClick={() =>
-            handleClick({ title: "Task Tracker", description: "..." })
-          }
-        >
+        <div className="project" onClick={() => handleClick(project3)}>
           <h3 className="project__title">{project3.title}</h3>
           <p className="project__description">{project3.description}</p>
           <ul className="project__technologies">
@@ -94,10 +79,7 @@ const Projects = () => {
             <li className="project__technology">React</li>
           </ul>
         </div>
-        <div
-          className="project"
-          onClick={() => handleClick({ title: "Ana", description: "..." })}
-        >
+        <div className="project" onClick={() => handleClick(project4)}>
           <h3 className="project__title">{project4.title}</h3>
           <p className="project__description">{project4.description}</p>
           <ul className="project__technologies">
