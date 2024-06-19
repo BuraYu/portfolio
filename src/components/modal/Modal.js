@@ -9,17 +9,15 @@ const Modal = ({ isOpen, onClose, children }) => {
     <div className="modal">
       <div className="modal__content">
         <img src={smoker} className="smoker" />
-        {/* {children}
-        {console.log(children[0].props.children)} */}
-
         <div className="modal__description">
           <h3 className="project__title">{children[0].props.children}</h3>
           <p className="project__description">{children[1].props.children}</p>
           <ul className="project__technologies">
-            <li className="project__technology">HTML</li>
-            <li className="project__technology">CSS</li>
-            <li className="project__technology">JavaScript</li>
-            <li className="project__technology">React</li>
+            {children[2].props.children.map((element, index) => (
+              <li key={index} className="project__technology">
+                {element}
+              </li>
+            ))}
           </ul>
 
           <div className="modal__links">

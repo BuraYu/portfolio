@@ -55,14 +55,15 @@
 
 .project__technologies {
   list-style-type: none;
-  padding: 0;
+  padding: 2px;
 }
 
 .project__technology {
   background-color: rgba(45, 212, 191, 0.5);
+  font-size: 14px;
   color: #9fd3c7;
   border-radius: 5555px;
   display: inline-block;
-  margin-right: 5px;
+  margin: 5px;
   padding: 5px 10px;
 }
