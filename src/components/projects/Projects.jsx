@@ -47,7 +47,7 @@ const Projects = () => {
         <div
           className="project"
           onClick={() =>
-            handleClick({ title: "Task Tracker", description: "..." })
+            handleClick({ title: "Task Tracker 2", description: "..." })
           }
         >
           <h3 className="project__title">Task Tracker</h3>
