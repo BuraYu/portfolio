@@ -8,13 +8,11 @@
 }
 
 .projects__section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: 60px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  justify-items: center;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .project {
@@ -22,9 +20,9 @@
   flex-direction: column;
   justify-content: space-between;
   flex: 1 1 25%;
-  max-width: 25%;
   height: 300px;
-  margin: 10px;
+  max-width: 400px;
+  margin: 100px;
   padding: 15px;
   border-radius: 8px;
   transition: background-color 0.5s ease;
