@@ -21,8 +21,8 @@ const Modal = ({ isOpen, onClose, children }) => {
           </ul>
 
           <div className="modal__links">
-            <a href="">GitHub</a>
             <a href="">Website</a>
+            <a href="">Source Code (Git)</a>
           </div>
         </div>
 
