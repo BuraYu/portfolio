@@ -19,26 +19,22 @@ const Projects = () => {
 
   const projects = [
     {
-      project: 1,
       title: "Weather Dashboard",
       description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.`,
       techStack: ["HTML", "CSS", "JavaScript", "React", "NodeJS"],
     },
 
     {
-      project: 2,
       title: "Expense Tracker",
       description: `Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.`,
       techStack: ["HTML", "CSS", "JavaScript", "React", "NodeJS", "NextJS"],
     },
     {
-      project: 3,
       title: "Portfolio Website",
       description: `Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem.`,
       techStack: ["HTML", "CSS", "JavaScript", "React"],
     },
     {
-      project: 4,
       title: "Task Tracker",
       description: `Stay organized and boost your productivity with our Task Tracker
   app, now enhanced with ChatGPT integration. This innovative app not
@@ -51,20 +47,17 @@ const Projects = () => {
     },
   ];
 
+  // add key to elements
   return (
     <div className="projects">
       <div className="projects__section">
         {projects.map((e, i) => (
           <div className="project" onClick={() => handleClick(projects[i])}>
-            {console.log(i)}
-            <h3 className="project__title">{e.title}</h3>
+            <h2 className="project__title">{e.title}</h2>
             <p className="project__description">{e.description}</p>
             <ul className="project__technologies">
               {projects[i].techStack.map((element, index) => (
-                <li
-                  key={element.project + index}
-                  className="project__technology"
-                >
+                <li key={element + index} className="project__technology">
                   {element}
                 </li>
               ))}

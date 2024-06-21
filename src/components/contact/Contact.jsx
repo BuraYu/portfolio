@@ -40,7 +40,6 @@ const Contact = () => {
         }
       );
   };
-  //add notification that the email is sent -> send change the button :D
   //required
 
   return (

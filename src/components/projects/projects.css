@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -10,19 +13,19 @@
 .projects__section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
   justify-items: center;
   align-items: center;
+  gap: 40px;
 }
 
 .project {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   justify-content: space-between;
   flex: 1 1 25%;
   height: 300px;
-  margin: 100px;
-  padding: 15px;
+  max-width: 600px;
   border-radius: 8px;
   transition: background-color 0.5s ease;
 }
@@ -32,13 +35,13 @@
 }
 
 .project__title {
-  font-size: 1.5em;
+  font-size: 38px;
   margin-bottom: 10px;
   color: #ececec;
+  font-family: "Poppins", sans-serif;
 }
 
 .project__title:hover {
-  font-size: 1.5em;
   margin-bottom: 10px;
   color: #9fd3c7;
 }
@@ -47,6 +50,7 @@
   font-size: 1em;
   margin-bottom: 15px;
   color: #9fd3c7;
+  font-family: "Roboto", sans-serif;
 }
 
 .project__technologies {
@@ -69,4 +73,3 @@
   justify-content: space-evenly;
   margin-top: 20px;
 }
-
