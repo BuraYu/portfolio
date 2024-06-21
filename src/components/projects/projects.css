@@ -63,3 +63,10 @@
   margin: 5px;
   padding: 5px 10px;
 }
+
+.contact__socials {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+

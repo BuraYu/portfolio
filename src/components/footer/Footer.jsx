@@ -1,11 +1,14 @@
 import React from "react";
 import "./footer.css";
+import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
-    <div>
-      <h1 className="footer">Footer</h1>
-    </div>
+    <footer className="social-footer">
+      <SocialIcon url="www.xing.de" />
+      <SocialIcon url="www.github.com" />
+      <SocialIcon url="www.linkedin.com" />
+    </footer>
   );
 };
 

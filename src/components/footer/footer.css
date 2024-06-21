@@ -1,3 +1,5 @@
-.footer {
-  color: rgb(47, 0, 255);
+.social-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

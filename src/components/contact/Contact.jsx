@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+import { SocialIcon } from "react-social-icons";
 
 const Contact = () => {
   const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID;
@@ -84,6 +85,21 @@ const Contact = () => {
             {thankYouMessage}
           </h3>
           <p className="contact__message-text">{message} </p>
+          <div className="contact__socials">
+            <SocialIcon
+              url="www.xing.de"
+              href="https://www.xing.com/profile/Burak_Yueksel072782/"
+              className="my-social-icon"
+            />
+            <SocialIcon
+              url="www.github.com"
+              href="https://www.github.com/BuraYu"
+            />
+            <SocialIcon
+              url="www.linkedin.com"
+              href="https://www.linkedin.com/in/buraky%C3%BCksel-/"
+            />
+          </div>
         </div>
       </div>
     </div>
