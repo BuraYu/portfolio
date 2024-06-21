@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 
@@ -8,6 +8,15 @@ const Contact = () => {
   const publicKey = process.env.REACT_APP_YOUR_PUBLIC_KEY;
 
   const form = useRef();
+  const [buttonText, setButtonText] = useState("Send");
+  const [buttonColor, setButtonColor] = useState("");
+  const [thankYouMessage, setThankYouMessage] = useState(
+    "Let's talk about everything"
+  );
+  const [message, setMessage] = useState(
+    "Feel free to contact me via the form or social media below."
+  );
+  const [messageColor, setMessageColor] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -19,6 +28,11 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          setButtonText("Message Sent!");
+          setButtonColor("green");
+          setThankYouMessage("Thank you for the Message!");
+          setMessage("I will get back to you, shortly.");
+          setMessageColor("messageColor");
         },
         (error) => {
           console.log("FAILED...", error.text);
@@ -57,17 +71,19 @@ const Contact = () => {
               className="contact__textarea"
               placeholder="Write your message"
             />
-            <input type="submit" value="Send" className="contact__submit" />
+            <input
+              type="submit"
+              value={buttonText}
+              className={`contact__submit ${buttonColor}`}
+            />
           </form>
         </div>
 
         <div className="contact__message">
-          <h3 className="contact__message-header">
-            Let's talk about everything
+          <h3 className={`contact__message-header ${messageColor}`}>
+            {thankYouMessage}
           </h3>
-          <p className="contact__message-text">
-            Feel free to contact me via the form or social media below.
-          </p>
+          <p className="contact__message-text">{message} </p>
         </div>
       </div>
     </div>
