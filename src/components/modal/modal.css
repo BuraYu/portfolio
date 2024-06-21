@@ -86,7 +86,7 @@
   margin-top: 40px;
 }
 
-a {
+.modal__link {
   background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%);
   background-size: 200% 100%;
   background-position: -100%;
@@ -98,7 +98,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:before {
+.modal__link:before {
   content: "";
   background: #54b3d6;
   display: block;
@@ -110,10 +110,10 @@ a:before {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover {
+.modal__link:hover {
   background-position: 0;
 }
 
-a:hover::before {
+.modal__link:hover::before {
   width: 100%;
 }

@@ -25,7 +25,7 @@ const HeaderHero = () => {
           </ul>
         </nav>
         <a className="cta" href="#">
-          <button>Contact</button>
+          <button className="headerHero__button">Contact</button>
         </a>
       </header>
       <section className="heroSection">

@@ -4,6 +4,7 @@ import AboutMe from "./components/aboutMe/AboutMe";
 import Contact from "./components/contact/Contact.jsx";
 import HeaderHero from "./components/header/HeaderHero.jsx";
 import Projects from "./components/projects/Projects.jsx";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
