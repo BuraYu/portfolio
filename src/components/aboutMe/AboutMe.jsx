@@ -4,7 +4,7 @@ import goku from "../../images/goku-lol.gif";
 
 const AboutMe = () => {
   return (
-    <div className="aboutme__container">
+    <section className="aboutme__container" id="about__section">
       <div className="aboutme__description">
         <h2 className="about">About Me</h2>
         <p>
@@ -38,7 +38,7 @@ const AboutMe = () => {
       <div className="aboutme__image">
         <img src={goku} alt="Son Goku" />
       </div>
-    </div>
+    </section>
   );
 };
 

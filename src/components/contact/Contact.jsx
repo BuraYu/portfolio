@@ -43,7 +43,7 @@ const Contact = () => {
   //required
 
   return (
-    <div className="contact">
+    <section className="contact" id="contact__section">
       <div className="contact__container">
         <div className="contact__form-wrapper">
           <h2 className="contact__header">
@@ -101,7 +101,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -49,7 +49,7 @@ const Projects = () => {
 
   // add key to elements
   return (
-    <div className="projects">
+    <section className="projects" id="projects__section">
       <div className="projects__section">
         {projects.map((e, i) => (
           <div className="project" onClick={() => handleClick(projects[i])}>
@@ -70,7 +70,7 @@ const Projects = () => {
         <p>{selectedProject?.description}</p>
         <p>{selectedProject?.techStack}</p>
       </Modal>
-    </div>
+    </section>
   );
 };
 
